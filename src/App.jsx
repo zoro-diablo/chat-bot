@@ -7,6 +7,7 @@ import Chart from './router/Chart';
 import Graph from './router/Graph';
 import Settings from './router/Settings';
 import Date from './router/Date';
+import VoiceflowChatWidget from './components/VoiceflowChatWidget';
 
 const App = () => {
   const [theme, setTheme] = useState('light');
@@ -21,6 +22,7 @@ const App = () => {
         <Navbar theme={theme} toggleTheme={toggleTheme} />
       </div>
       <div className='flex h-[85%]'>
+        <VoiceflowChatWidget />
         <Sidebar />
         <Routes>
           <Route path='/' element={<Home />} />
@@ -28,7 +30,6 @@ const App = () => {
           <Route path='/graph' element={<Graph />} />
           <Route path='/date' element={<Date />} />
           <Route path='/settings' element={<Settings />} />
-
         </Routes>
       </div>
     </div>
