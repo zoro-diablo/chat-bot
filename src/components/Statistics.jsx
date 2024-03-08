@@ -1,5 +1,5 @@
 import { FaList } from 'react-icons/fa';
-import { BsGridFill } from 'react-icons/bs';
+import { MdGridView } from 'react-icons/md';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 
 const Statistics = () => {
@@ -30,8 +30,11 @@ const Statistics = () => {
             </div>
           </div>
           <div className='flex gap-5 items-center'>
-            <FaList size={25} className='text-cta' />
-            <BsGridFill size={25} className='text-cta' />
+            <FaList size={20} className='text-cta cursor-pointer ' />
+            <MdGridView
+              size={30}
+              className='text-secondary cursor-pointer bg-cta p-1 rounded-sm'
+            />
           </div>
         </div>
       </div>
