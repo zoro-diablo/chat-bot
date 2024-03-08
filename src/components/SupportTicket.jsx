@@ -62,7 +62,7 @@ const SupportTicket = () => {
               <p className='text-[11px] text-cta'>{ticket.comment}</p>
             </div>
             <div>
-              <FaRegStar size={20} className='text-cta' />
+              <FaRegStar size={20} className='text-cta cursor-pointer' />
             </div>
           </div>
           <p className='text-[13px] flex justify-end font-medium text-cta mb-2 mr-4'>
